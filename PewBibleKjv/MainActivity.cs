@@ -29,13 +29,6 @@ namespace PewBibleKjv
         {
             base.OnCreate(savedInstanceState);
 
-            // Determine if we have an intent to go to a particular verse.
-            var bookIndex = Intent.GetIntExtra("BookIndex", -1);
-            var chapterIndex = Intent.GetIntExtra("ChapterIndex", -1);
-            var startingVerse = Bible.InvalidAbsoluteVerseNumber;
-            if (bookIndex != -1 && chapterIndex != -1)
-                startingVerse = Structure.Books[bookIndex].Chapters[chapterIndex].BeginVerse;
-
             // Set up our view
             SetContentView(Resource.Layout.Main);
             var recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
@@ -54,7 +47,7 @@ namespace PewBibleKjv
             _forwardButton = FindViewById<ImageButton>(Resource.Id.forwardButton);
             _historyControlsAdapter = new ViewHistoryControlsAdapter(_backButton, _forwardButton);
 
-            CreateApp(startingVerse);
+            CreateApp(0);
         }
 
         protected override void OnPause()
