@@ -29,7 +29,7 @@ namespace PewBibleKjv
 
             // Initialize the app
             _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView);
-            _verseViewAdapter.OnSwipeLeft += SwipeLeft;
+            _verseViewAdapter.SwipeTouchListener.OnSwipeLeft += SwipeLeft;
         }
 
         private void SwipeLeft()
