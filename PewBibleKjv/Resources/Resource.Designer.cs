@@ -2002,8 +2002,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070029
 			public const int SYM = 2131165225;
 			
-			// aapt resource value: 0x7f0700bb
-			public const int action0 = 2131165371;
+			// aapt resource value: 0x7f070075
+			public const int action0 = 2131165301;
 			
 			// aapt resource value: 0x7f07005f
 			public const int action_bar = 2131165279;
@@ -2026,17 +2026,17 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f07003d
 			public const int action_bar_title = 2131165245;
 			
-			// aapt resource value: 0x7f0700b8
-			public const int action_container = 2131165368;
+			// aapt resource value: 0x7f070072
+			public const int action_container = 2131165298;
 			
 			// aapt resource value: 0x7f070060
 			public const int action_context_bar = 2131165280;
 			
-			// aapt resource value: 0x7f0700bf
-			public const int action_divider = 2131165375;
+			// aapt resource value: 0x7f070079
+			public const int action_divider = 2131165305;
 			
-			// aapt resource value: 0x7f0700b9
-			public const int action_image = 2131165369;
+			// aapt resource value: 0x7f070073
+			public const int action_image = 2131165299;
 			
 			// aapt resource value: 0x7f070003
 			public const int action_menu_divider = 2131165187;
@@ -2053,11 +2053,11 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f07003f
 			public const int action_mode_close_button = 2131165247;
 			
-			// aapt resource value: 0x7f0700ba
-			public const int action_text = 2131165370;
+			// aapt resource value: 0x7f070074
+			public const int action_text = 2131165300;
 			
-			// aapt resource value: 0x7f0700c8
-			public const int actions = 2131165384;
+			// aapt resource value: 0x7f070082
+			public const int actions = 2131165314;
 			
 			// aapt resource value: 0x7f070040
 			public const int activity_chooser_view_content = 2131165248;
@@ -2077,8 +2077,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070039
 			public const int async = 2131165241;
 			
-			// aapt resource value: 0x7f0700b4
-			public const int backButton = 2131165364;
+			// aapt resource value: 0x7f07006e
+			public const int backButton = 2131165294;
 			
 			// aapt resource value: 0x7f070037
 			public const int basic = 2131165239;
@@ -2092,209 +2092,11 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f07002f
 			public const int bottom = 2131165231;
 			
-			// aapt resource value: 0x7f07006f
-			public const int button0 = 2131165295;
-			
-			// aapt resource value: 0x7f070070
-			public const int button1 = 2131165296;
-			
-			// aapt resource value: 0x7f070079
-			public const int button10 = 2131165305;
-			
-			// aapt resource value: 0x7f07007a
-			public const int button11 = 2131165306;
-			
-			// aapt resource value: 0x7f07007b
-			public const int button12 = 2131165307;
-			
-			// aapt resource value: 0x7f07007c
-			public const int button13 = 2131165308;
-			
-			// aapt resource value: 0x7f07007d
-			public const int button14 = 2131165309;
-			
-			// aapt resource value: 0x7f07007e
-			public const int button15 = 2131165310;
-			
-			// aapt resource value: 0x7f07007f
-			public const int button16 = 2131165311;
-			
-			// aapt resource value: 0x7f070080
-			public const int button17 = 2131165312;
-			
-			// aapt resource value: 0x7f070081
-			public const int button18 = 2131165313;
-			
-			// aapt resource value: 0x7f070082
-			public const int button19 = 2131165314;
-			
-			// aapt resource value: 0x7f070071
-			public const int button2 = 2131165297;
-			
-			// aapt resource value: 0x7f070083
-			public const int button20 = 2131165315;
-			
-			// aapt resource value: 0x7f070084
-			public const int button21 = 2131165316;
-			
-			// aapt resource value: 0x7f070085
-			public const int button22 = 2131165317;
-			
-			// aapt resource value: 0x7f070086
-			public const int button23 = 2131165318;
-			
-			// aapt resource value: 0x7f070087
-			public const int button24 = 2131165319;
-			
-			// aapt resource value: 0x7f070088
-			public const int button25 = 2131165320;
-			
-			// aapt resource value: 0x7f070089
-			public const int button26 = 2131165321;
-			
-			// aapt resource value: 0x7f07008a
-			public const int button27 = 2131165322;
-			
-			// aapt resource value: 0x7f07008b
-			public const int button28 = 2131165323;
-			
-			// aapt resource value: 0x7f07008c
-			public const int button29 = 2131165324;
-			
-			// aapt resource value: 0x7f070072
-			public const int button3 = 2131165298;
-			
-			// aapt resource value: 0x7f07008d
-			public const int button30 = 2131165325;
-			
-			// aapt resource value: 0x7f07008e
-			public const int button31 = 2131165326;
-			
-			// aapt resource value: 0x7f07008f
-			public const int button32 = 2131165327;
-			
-			// aapt resource value: 0x7f070090
-			public const int button33 = 2131165328;
-			
-			// aapt resource value: 0x7f070091
-			public const int button34 = 2131165329;
-			
-			// aapt resource value: 0x7f070092
-			public const int button35 = 2131165330;
-			
-			// aapt resource value: 0x7f070093
-			public const int button36 = 2131165331;
-			
-			// aapt resource value: 0x7f070094
-			public const int button37 = 2131165332;
-			
-			// aapt resource value: 0x7f070095
-			public const int button38 = 2131165333;
-			
-			// aapt resource value: 0x7f070096
-			public const int button39 = 2131165334;
-			
-			// aapt resource value: 0x7f070073
-			public const int button4 = 2131165299;
-			
-			// aapt resource value: 0x7f070097
-			public const int button40 = 2131165335;
-			
-			// aapt resource value: 0x7f070098
-			public const int button41 = 2131165336;
-			
-			// aapt resource value: 0x7f070099
-			public const int button42 = 2131165337;
-			
-			// aapt resource value: 0x7f07009a
-			public const int button43 = 2131165338;
-			
-			// aapt resource value: 0x7f07009b
-			public const int button44 = 2131165339;
-			
-			// aapt resource value: 0x7f07009c
-			public const int button45 = 2131165340;
-			
-			// aapt resource value: 0x7f07009d
-			public const int button46 = 2131165341;
-			
-			// aapt resource value: 0x7f07009e
-			public const int button47 = 2131165342;
-			
-			// aapt resource value: 0x7f07009f
-			public const int button48 = 2131165343;
-			
-			// aapt resource value: 0x7f0700a0
-			public const int button49 = 2131165344;
-			
-			// aapt resource value: 0x7f070074
-			public const int button5 = 2131165300;
-			
-			// aapt resource value: 0x7f0700a1
-			public const int button50 = 2131165345;
-			
-			// aapt resource value: 0x7f0700a2
-			public const int button51 = 2131165346;
-			
-			// aapt resource value: 0x7f0700a3
-			public const int button52 = 2131165347;
-			
-			// aapt resource value: 0x7f0700a4
-			public const int button53 = 2131165348;
-			
-			// aapt resource value: 0x7f0700a5
-			public const int button54 = 2131165349;
-			
-			// aapt resource value: 0x7f0700a6
-			public const int button55 = 2131165350;
-			
-			// aapt resource value: 0x7f0700a7
-			public const int button56 = 2131165351;
-			
-			// aapt resource value: 0x7f0700a8
-			public const int button57 = 2131165352;
-			
-			// aapt resource value: 0x7f0700a9
-			public const int button58 = 2131165353;
-			
-			// aapt resource value: 0x7f0700aa
-			public const int button59 = 2131165354;
-			
-			// aapt resource value: 0x7f070075
-			public const int button6 = 2131165301;
-			
-			// aapt resource value: 0x7f0700ab
-			public const int button60 = 2131165355;
-			
-			// aapt resource value: 0x7f0700ac
-			public const int button61 = 2131165356;
-			
-			// aapt resource value: 0x7f0700ad
-			public const int button62 = 2131165357;
-			
-			// aapt resource value: 0x7f0700ae
-			public const int button63 = 2131165358;
-			
-			// aapt resource value: 0x7f0700af
-			public const int button64 = 2131165359;
-			
-			// aapt resource value: 0x7f0700b0
-			public const int button65 = 2131165360;
-			
-			// aapt resource value: 0x7f070076
-			public const int button7 = 2131165302;
-			
-			// aapt resource value: 0x7f070077
-			public const int button8 = 2131165303;
-			
-			// aapt resource value: 0x7f070078
-			public const int button9 = 2131165304;
-			
 			// aapt resource value: 0x7f070046
 			public const int buttonPanel = 2131165254;
 			
-			// aapt resource value: 0x7f0700bc
-			public const int cancel_action = 2131165372;
+			// aapt resource value: 0x7f070076
+			public const int cancel_action = 2131165302;
 			
 			// aapt resource value: 0x7f070038
 			public const int chains = 2131165240;
@@ -2302,17 +2104,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070056
 			public const int checkbox = 2131165270;
 			
-			// aapt resource value: 0x7f0700b3
-			public const int chooseChapterButton = 2131165363;
-			
-			// aapt resource value: 0x7f0700b2
-			public const int chooseChapterGrid = 2131165362;
-			
-			// aapt resource value: 0x7f0700b1
-			public const int chooseChapterHeading = 2131165361;
-			
-			// aapt resource value: 0x7f0700c4
-			public const int chronometer = 2131165380;
+			// aapt resource value: 0x7f07007e
+			public const int chronometer = 2131165310;
 			
 			// aapt resource value: 0x7f07002b
 			public const int collapseActionView = 2131165227;
@@ -2341,8 +2134,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070022
 			public const int end = 2131165218;
 			
-			// aapt resource value: 0x7f0700ca
-			public const int end_padder = 2131165386;
+			// aapt resource value: 0x7f070084
+			public const int end_padder = 2131165316;
 			
 			// aapt resource value: 0x7f070041
 			public const int expand_activities_button = 2131165249;
@@ -2353,14 +2146,11 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f07003b
 			public const int forever = 2131165243;
 			
-			// aapt resource value: 0x7f0700b6
-			public const int forwardButton = 2131165366;
+			// aapt resource value: 0x7f070070
+			public const int forwardButton = 2131165296;
 			
-			// aapt resource value: 0x7f07006e
-			public const int guideline = 2131165294;
-			
-			// aapt resource value: 0x7f0700b5
-			public const int headingText = 2131165365;
+			// aapt resource value: 0x7f07006f
+			public const int headingText = 2131165295;
 			
 			// aapt resource value: 0x7f070005
 			public const int home = 2131165189;
@@ -2371,8 +2161,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070045
 			public const int icon = 2131165253;
 			
-			// aapt resource value: 0x7f0700c9
-			public const int icon_group = 2131165385;
+			// aapt resource value: 0x7f070083
+			public const int icon_group = 2131165315;
 			
 			// aapt resource value: 0x7f07002c
 			public const int ifRoom = 2131165228;
@@ -2380,8 +2170,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070042
 			public const int image = 2131165250;
 			
-			// aapt resource value: 0x7f0700c5
-			public const int info = 2131165381;
+			// aapt resource value: 0x7f07007f
+			public const int info = 2131165311;
 			
 			// aapt resource value: 0x7f07003c
 			public const int italic = 2131165244;
@@ -2401,11 +2191,11 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070044
 			public const int list_item = 2131165252;
 			
-			// aapt resource value: 0x7f0700be
-			public const int media_actions = 2131165374;
+			// aapt resource value: 0x7f070078
+			public const int media_actions = 2131165304;
 			
-			// aapt resource value: 0x7f0700cb
-			public const int message = 2131165387;
+			// aapt resource value: 0x7f070085
+			public const int message = 2131165317;
 			
 			// aapt resource value: 0x7f070023
 			public const int middle = 2131165219;
@@ -2422,14 +2212,14 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070010
 			public const int normal = 2131165200;
 			
-			// aapt resource value: 0x7f0700c7
-			public const int notification_background = 2131165383;
+			// aapt resource value: 0x7f070081
+			public const int notification_background = 2131165313;
 			
-			// aapt resource value: 0x7f0700c1
-			public const int notification_main_column = 2131165377;
+			// aapt resource value: 0x7f07007b
+			public const int notification_main_column = 2131165307;
 			
-			// aapt resource value: 0x7f0700c0
-			public const int notification_main_column_container = 2131165376;
+			// aapt resource value: 0x7f07007a
+			public const int notification_main_column_container = 2131165306;
 			
 			// aapt resource value: 0x7f070034
 			public const int packed = 2131165236;
@@ -2449,14 +2239,14 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070058
 			public const int radio = 2131165272;
 			
-			// aapt resource value: 0x7f0700b7
-			public const int recyclerView = 2131165367;
+			// aapt resource value: 0x7f070071
+			public const int recyclerView = 2131165297;
 			
-			// aapt resource value: 0x7f0700c6
-			public const int right_icon = 2131165382;
+			// aapt resource value: 0x7f070080
+			public const int right_icon = 2131165312;
 			
-			// aapt resource value: 0x7f0700c2
-			public const int right_side = 2131165378;
+			// aapt resource value: 0x7f07007c
+			public const int right_side = 2131165308;
 			
 			// aapt resource value: 0x7f07001a
 			public const int screen = 2131165210;
@@ -2536,8 +2326,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f07001d
 			public const int src_over = 2131165213;
 			
-			// aapt resource value: 0x7f0700bd
-			public const int status_bar_latest_event_content = 2131165373;
+			// aapt resource value: 0x7f070077
+			public const int status_bar_latest_event_content = 2131165303;
 			
 			// aapt resource value: 0x7f070059
 			public const int submenuarrow = 2131165273;
@@ -2560,8 +2350,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f07004c
 			public const int textSpacerNoTitle = 2131165260;
 			
-			// aapt resource value: 0x7f0700c3
-			public const int time = 2131165379;
+			// aapt resource value: 0x7f07007d
+			public const int time = 2131165309;
 			
 			// aapt resource value: 0x7f07000e
 			public const int title = 2131165198;
@@ -2587,8 +2377,8 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f070018
 			public const int useLogo = 2131165208;
 			
-			// aapt resource value: 0x7f0700cc
-			public const int verseText = 2131165388;
+			// aapt resource value: 0x7f070086
+			public const int verseText = 2131165318;
 			
 			// aapt resource value: 0x7f07002e
 			public const int withText = 2131165230;
@@ -2722,79 +2512,70 @@ namespace PewBibleKjv
 			public const int abc_select_dialog_material = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int ChooseBook = 2130968603;
+			public const int Main = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int ChooseChapter = 2130968604;
+			public const int notification_action = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int ChooseChapterButton = 2130968605;
+			public const int notification_action_tombstone = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int Main = 2130968606;
+			public const int notification_media_action = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int notification_action = 2130968607;
+			public const int notification_media_cancel_action = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_action_tombstone = 2130968608;
+			public const int notification_template_big_media = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_media_action = 2130968609;
+			public const int notification_template_big_media_custom = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_media_cancel_action = 2130968610;
+			public const int notification_template_big_media_narrow = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_template_big_media = 2130968611;
+			public const int notification_template_big_media_narrow_custom = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_big_media_custom = 2130968612;
+			public const int notification_template_custom_big = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int notification_template_big_media_narrow = 2130968613;
+			public const int notification_template_icon_group = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int notification_template_big_media_narrow_custom = 2130968614;
+			public const int notification_template_lines_media = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int notification_template_custom_big = 2130968615;
+			public const int notification_template_media = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int notification_template_icon_group = 2130968616;
+			public const int notification_template_media_custom = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int notification_template_lines_media = 2130968617;
+			public const int notification_template_part_chronometer = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int notification_template_media = 2130968618;
+			public const int notification_template_part_time = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int notification_template_media_custom = 2130968619;
+			public const int select_dialog_item_material = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int notification_template_part_chronometer = 2130968620;
+			public const int select_dialog_multichoice_material = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_template_part_time = 2130968621;
+			public const int select_dialog_singlechoice_material = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int select_dialog_item_material = 2130968622;
+			public const int support_simple_spinner_dropdown_item = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int select_dialog_multichoice_material = 2130968623;
+			public const int tooltip = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int select_dialog_singlechoice_material = 2130968624;
-			
-			// aapt resource value: 0x7f040031
-			public const int support_simple_spinner_dropdown_item = 2130968625;
-			
-			// aapt resource value: 0x7f040032
-			public const int tooltip = 2130968626;
-			
-			// aapt resource value: 0x7f040033
-			public const int VerseLayout = 2130968627;
+			public const int VerseLayout = 2130968624;
 			
 			static Layout()
 			{

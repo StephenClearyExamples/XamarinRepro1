@@ -118,8 +118,6 @@
     <Compile Include="VerseView\VerseAdapter.cs" />
     <Compile Include="VerseView\VerseViewHolder.cs" />
     <Compile Include="ViewHistoryControlsAdapter.cs" />
-    <Compile Include="ChooseBookActivity.cs" />
-    <Compile Include="ChooseChapterActivity.cs" />
     <Compile Include="RecyclerViewVerseViewAdapter.cs" />
     <Compile Include="SharedPreferencesSimpleStorageAdapter.cs" />
     <Compile Include="TextViewChapterHeadingAdapter.cs" />
@@ -134,15 +132,6 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\VerseLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChooseBook.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChooseChapter.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChooseChapterButton.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

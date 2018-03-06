@@ -45,7 +45,6 @@ namespace PewBibleKjv
 
             // Wire up Android-side events
             var chapterHeading = FindViewById<Button>(Resource.Id.headingText);
-            chapterHeading.Click += (_, __) => StartActivity(typeof(ChooseBookActivity));
 
             // Initialize the app
             _chapterHeadingAdapter = new TextViewChapterHeadingAdapter(chapterHeading);

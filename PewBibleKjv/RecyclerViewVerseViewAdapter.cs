@@ -21,25 +21,12 @@ namespace PewBibleKjv
     {
         private readonly RecyclerView _recyclerView;
         private readonly LinearLayoutManager _layoutManager;
-        private readonly ScrollListener _scrollListener;
         private readonly SwipeTouchListener _swipeTouchListener;
-        private int _lastPosition = Bible.InvalidAbsoluteVerseNumber;
 
         public RecyclerViewVerseViewAdapter(Context context, RecyclerView recyclerView, LinearLayoutManager layoutManager)
         {
             _recyclerView = recyclerView;
             _layoutManager = layoutManager;
-
-            _scrollListener = new ScrollListener();
-            _scrollListener.Scrolled += (_, __, ___) =>
-            {
-                var firstIndex = CurrentAbsoluteVerseNumber;
-                if (firstIndex == _lastPosition)
-                    return;
-                _lastPosition = firstIndex;
-                OnScroll?.Invoke();
-            };
-            _recyclerView.AddOnScrollListener(_scrollListener);
 
             _swipeTouchListener = new SwipeTouchListener(context);
             _recyclerView.SetOnTouchListener(_swipeTouchListener);
@@ -71,18 +58,6 @@ namespace PewBibleKjv
         public void Jump(int absoluteVerseNumber)
         {
             _layoutManager.ScrollToPositionWithOffset(absoluteVerseNumber, 0);
-        }
-
-        public class ScrollListener : RecyclerView.OnScrollListener
-        {
-            public override void OnScrollStateChanged(RecyclerView recyclerView, int newState) =>
-                ScrollStateChanged?.Invoke(recyclerView, newState);
-
-            public override void OnScrolled(RecyclerView recyclerView, int dx, int dy) =>
-                Scrolled?.Invoke(recyclerView, dx, dy);
-
-            public event Action<RecyclerView, int> ScrollStateChanged;
-            public event Action<RecyclerView, int, int> Scrolled;
         }
     }
 }
