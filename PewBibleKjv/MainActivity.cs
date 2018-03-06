@@ -8,8 +8,6 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Views;
-using PewBibleKjv.Logic;
-using PewBibleKjv.Text;
 using PewBibleKjv.VerseView;
 
 namespace PewBibleKjv

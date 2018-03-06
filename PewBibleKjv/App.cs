@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PewBibleKjv.Logic.Adapters.UI;
-using PewBibleKjv.Text;
 
 namespace PewBibleKjv
 {

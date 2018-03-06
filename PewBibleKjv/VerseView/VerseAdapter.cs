@@ -4,8 +4,6 @@ using Android.Support.V7.Widget;
 using Android.Text;
 using Android.Text.Style;
 using Android.Views;
-using PewBibleKjv.Logic;
-using PewBibleKjv.Text;
 
 namespace PewBibleKjv.VerseView
 {
