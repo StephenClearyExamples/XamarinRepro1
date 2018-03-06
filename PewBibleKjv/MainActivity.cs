@@ -30,7 +30,7 @@ namespace PewBibleKjv
             recyclerView.SetAdapter(new VerseAdapter(LayoutInflater));
 
             // Initialize the app
-            _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView, layoutManager);
+            _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView);
             _app = new App(_verseViewAdapter);
         }
     }
