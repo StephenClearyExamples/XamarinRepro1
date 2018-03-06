@@ -14,3 +14,14 @@ To repro:
 
 1. Start the project (on a device or emulator). You should see a list of numbers.
 1. Scroll the list.
+
+You should see an exception:
+
+```
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'Android.Views.GestureDetector'.
+  at Java.Interop.JniPeerMembers.AssertSelf (Java.Interop.IJavaPeerable self) [0x00029] in <e8c0e16a54534fa885244f0ad837c79e>:0 
+  at Java.Interop.JniPeerMembers+JniInstanceMethods.InvokeVirtualBooleanMethod (System.String encodedMember, Java.Interop.IJavaPeerable self, Java.Interop.JniArgumentValue* parameters) [0x00000] in <e8c0e16a54534fa885244f0ad837c79e>:0 
+  at Android.Views.GestureDetector.OnTouchEvent (Android.Views.MotionEvent ev) [0x00031] in <848bbd7c681a4975918c72f17d2f5144>:0 
+  at PewBibleKjv.SwipeTouchListener.OnTouch (Android.Views.View v, Android.Views.MotionEvent e) [0x00002] in C:\\Work\\XamarinRepro1\\PewBibleKjv\\SwipeTouchListener.cs:24
+```
