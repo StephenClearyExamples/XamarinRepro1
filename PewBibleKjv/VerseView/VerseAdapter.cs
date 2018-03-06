@@ -49,6 +49,7 @@ namespace PewBibleKjv.VerseView
             }
 
             vh.View.TextFormatted = formattedText;
+            GC.Collect();
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
