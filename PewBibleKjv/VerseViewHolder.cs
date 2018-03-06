@@ -2,7 +2,7 @@
 using Android.Views;
 using Android.Widget;
 
-namespace PewBibleKjv.VerseView
+namespace PewBibleKjv
 {
     public class VerseViewHolder : RecyclerView.ViewHolder
     {

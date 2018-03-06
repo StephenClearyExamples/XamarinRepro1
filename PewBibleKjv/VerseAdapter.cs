@@ -1,11 +1,8 @@
 ﻿using System;
-using Android.Graphics;
 using Android.Support.V7.Widget;
-using Android.Text;
-using Android.Text.Style;
 using Android.Views;
 
-namespace PewBibleKjv.VerseView
+namespace PewBibleKjv
 {
     public class VerseAdapter : RecyclerView.Adapter
     {

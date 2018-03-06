@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+using System.Diagnostics;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Support.V7.Widget;
 using Android.Views;
-using Android.Widget;
 
-namespace PewBibleKjv.VerseView
+namespace PewBibleKjv
 {
     public sealed class SwipeTouchListener: Java.Lang.Object, View.IOnTouchListener
     {
@@ -25,6 +17,17 @@ namespace PewBibleKjv.VerseView
         public event Action OnSwipeLeft;
         public event Action OnSwipeRight;
 
-        public bool OnTouch(View v, MotionEvent e) => _gestureDetector.OnTouchEvent(e);
+        public bool OnTouch(View v, MotionEvent e)
+        {
+            try
+            {
+                return _gestureDetector.OnTouchEvent(e);
+            }
+            catch (ObjectDisposedException exception)
+            {
+                Debugger.Break();
+                throw;
+            }
+        }
     }
 }
