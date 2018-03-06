@@ -29,12 +29,10 @@ namespace PewBibleKjv.Logic
 
         private void MovePreviousChapter()
         {
-            _verseView.Jump(_verseView.CurrentVerseLocation.PreviousChapter().AbsoluteVerseNumber);
         }
 
         private void MoveNextChapter()
         {
-            _verseView.Jump(_verseView.CurrentVerseLocation.NextChapter().AbsoluteVerseNumber);
         }
 
         private void UpdateCurrentLocation()
