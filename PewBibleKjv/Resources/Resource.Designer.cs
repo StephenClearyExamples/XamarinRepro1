@@ -3801,12 +3801,6 @@ namespace PewBibleKjv
 			// aapt resource value: 0x7f09016a
 			public const int Widget_Compat_NotificationActionText = 2131296618;
 			
-			// aapt resource value: 0x7f09016d
-			public const int book_button = 2131296621;
-			
-			// aapt resource value: 0x7f09016e
-			public const int first_book_button = 2131296622;
-			
 			static Style()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
