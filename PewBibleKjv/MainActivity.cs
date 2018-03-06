@@ -15,7 +15,6 @@ namespace PewBibleKjv
     [Activity(Label = "PewBibleKjv", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : AppCompatActivity
     {
-        private App _app;
         private RecyclerViewVerseViewAdapter _verseViewAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -25,13 +24,16 @@ namespace PewBibleKjv
             // Set up our view
             SetContentView(Resource.Layout.Main);
             var recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
-            var layoutManager = new LinearLayoutManager(this);
-            recyclerView.SetLayoutManager(layoutManager);
+            recyclerView.SetLayoutManager(new LinearLayoutManager(this));
             recyclerView.SetAdapter(new VerseAdapter(LayoutInflater));
 
             // Initialize the app
             _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView);
-            _app = new App(_verseViewAdapter);
+            _verseViewAdapter.OnSwipeLeft += SwipeLeft;
+        }
+
+        private void SwipeLeft()
+        {
         }
     }
 }

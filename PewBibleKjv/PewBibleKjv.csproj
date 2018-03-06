@@ -114,7 +114,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
     <Compile Include="VerseView\SwipeTouchListener.cs" />
     <Compile Include="VerseView\VerseAdapter.cs" />
     <Compile Include="VerseView\VerseViewHolder.cs" />
