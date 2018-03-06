@@ -50,19 +50,6 @@ namespace PewBibleKjv
             CreateApp(0);
         }
 
-        protected override void OnPause()
-        {
-            base.OnPause();
-            _app.Dispose();
-            _app = null;
-        }
-
-        protected override void OnResume()
-        {
-            base.OnResume();
-            CreateApp(Bible.InvalidAbsoluteVerseNumber);
-        }
-
         private void CreateApp(int startingVerse)
         {
             if (_app != null)
