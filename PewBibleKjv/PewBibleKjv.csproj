@@ -120,7 +120,6 @@
     <Compile Include="ViewHistoryControlsAdapter.cs" />
     <Compile Include="RecyclerViewVerseViewAdapter.cs" />
     <Compile Include="SharedPreferencesSimpleStorageAdapter.cs" />
-    <Compile Include="TextViewChapterHeadingAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -9,17 +9,12 @@ namespace PewBibleKjv.Logic
 {
     public sealed class App : IDisposable
     {
-        private readonly IChapterHeading _chapterHeading;
         private readonly IVerseView _verseView;
-        private readonly IHistoryControls _historyControls;
         private readonly History _history;
 
-        public App(IChapterHeading chapterHeading, IVerseView verseView, ISimpleStorage simpleStorage,
-            IHistoryControls historyControls, int initialJump)
+        public App(IVerseView verseView, ISimpleStorage simpleStorage, int initialJump)
         {
-            _chapterHeading = chapterHeading;
             _verseView = verseView;
-            _historyControls = historyControls;
 
             // Load history.
             _history = new History(simpleStorage);
@@ -30,8 +25,6 @@ namespace PewBibleKjv.Logic
             verseView.OnSwipeRight += MovePreviousChapter;
 
             // Wire up history to the history controls.
-            historyControls.BackClick += MoveBack;
-            historyControls.ForwardClick += MoveForward;
             _history.CanMoveChanged += EnableDisableHistoryButtons;
 
             // If the app has to jump to a verse, then insert it into the history.
@@ -50,15 +43,11 @@ namespace PewBibleKjv.Logic
             _verseView.OnScroll -= UpdateCurrentLocation;
             _verseView.OnSwipeLeft -= MoveNextChapter;
             _verseView.OnSwipeRight -= MovePreviousChapter;
-            _historyControls.BackClick -= MoveBack;
-            _historyControls.ForwardClick -= MoveForward;
             _history.CanMoveChanged -= EnableDisableHistoryButtons;
         }
 
         private void EnableDisableHistoryButtons()
         {
-            _historyControls.BackEnabled = _history.CanMoveBack;
-            _historyControls.ForwardEnabled = _history.CanMoveForward;
         }
 
         private void MoveForward()
@@ -83,7 +72,6 @@ namespace PewBibleKjv.Logic
 
         private void UpdateCurrentLocation()
         {
-            _chapterHeading.Text = _verseView.CurrentVerseLocation.ChapterHeadingText;
         }
     }
 }

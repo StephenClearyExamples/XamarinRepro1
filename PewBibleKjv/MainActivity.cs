@@ -18,12 +18,8 @@ namespace PewBibleKjv
     public class MainActivity : AppCompatActivity
     {
         private App _app;
-        private ImageButton _backButton;
-        private ImageButton _forwardButton;
-        private TextViewChapterHeadingAdapter _chapterHeadingAdapter;
         private RecyclerViewVerseViewAdapter _verseViewAdapter;
         private SharedPreferencesSimpleStorageAdapter _simpleStorageAdapter;
-        private ViewHistoryControlsAdapter _historyControlsAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,16 +32,9 @@ namespace PewBibleKjv
             recyclerView.SetLayoutManager(layoutManager);
             recyclerView.SetAdapter(new VerseAdapter(new TextService(), LayoutInflater));
 
-            // Wire up Android-side events
-            var chapterHeading = FindViewById<Button>(Resource.Id.headingText);
-
             // Initialize the app
-            _chapterHeadingAdapter = new TextViewChapterHeadingAdapter(chapterHeading);
             _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView, layoutManager);
             _simpleStorageAdapter = new SharedPreferencesSimpleStorageAdapter(ApplicationContext.GetSharedPreferences("global", FileCreationMode.Private));
-            _backButton = FindViewById<ImageButton>(Resource.Id.backButton);
-            _forwardButton = FindViewById<ImageButton>(Resource.Id.forwardButton);
-            _historyControlsAdapter = new ViewHistoryControlsAdapter(_backButton, _forwardButton);
 
             CreateApp(0);
         }
@@ -54,7 +43,7 @@ namespace PewBibleKjv
         {
             if (_app != null)
                 return;
-            _app = new App(_chapterHeadingAdapter, _verseViewAdapter, _simpleStorageAdapter, _historyControlsAdapter, startingVerse);
+            _app = new App(_verseViewAdapter, _simpleStorageAdapter, startingVerse);
         }
     }
 }
