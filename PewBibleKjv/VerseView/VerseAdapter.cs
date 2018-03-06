@@ -22,7 +22,7 @@ namespace PewBibleKjv.VerseView
         {
             var vh = (VerseViewHolder)holder;
             vh.View.Text = position.ToString();
-            GC.Collect();
+            GC.Collect(); // Encourage early disposal failure.
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)

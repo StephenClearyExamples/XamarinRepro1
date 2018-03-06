@@ -33,14 +33,6 @@ namespace PewBibleKjv
 
             // Initialize the app
             _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView, layoutManager);
-
-            CreateApp();
-        }
-
-        private void CreateApp()
-        {
-            if (_app != null)
-                return;
             _app = new App(_verseViewAdapter);
         }
     }
