@@ -23,7 +23,6 @@ namespace PewBibleKjv.VerseView
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             var vh = (VerseViewHolder)holder;
-            vh.Location = _data[position];
             vh.View.Text = position.ToString();
             GC.Collect();
         }
