@@ -15,27 +15,15 @@ namespace PewBibleKjv.Logic
             _verseView = verseView;
 
             // Keep track of changes to the verse view.
-            verseView.OnScroll += UpdateCurrentLocation;
             verseView.OnSwipeLeft += MoveNextChapter;
-            verseView.OnSwipeRight += MovePreviousChapter;
         }
 
         public void Dispose()
         {
-            _verseView.OnScroll -= UpdateCurrentLocation;
             _verseView.OnSwipeLeft -= MoveNextChapter;
-            _verseView.OnSwipeRight -= MovePreviousChapter;
-        }
-
-        private void MovePreviousChapter()
-        {
         }
 
         private void MoveNextChapter()
-        {
-        }
-
-        private void UpdateCurrentLocation()
         {
         }
     }
