@@ -26,16 +26,5 @@ namespace PewBibleKjv.Logic.Adapters.UI
         /// Returns the current verse number at the top of the view.
         /// </summary>
         int CurrentAbsoluteVerseNumber { get; }
-
-        /// <summary>
-        /// Returns the current verse location at the top of the view. This is equivalent to but more efficient than <c>Location.Create(CurrentAbsoluteVerseNumber)</c>.
-        /// </summary>
-        Location CurrentVerseLocation { get; }
-
-        /// <summary>
-        /// Skips the view to the specified verse number. Eventually raises <see cref="OnScroll"/> (not necessarily synchronously).
-        /// </summary>
-        /// <param name="absoluteVerseNumber">The verse number to scroll to.</param>
-        void Jump(int absoluteVerseNumber);
     }
 }
