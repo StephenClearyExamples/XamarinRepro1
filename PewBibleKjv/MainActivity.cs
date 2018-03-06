@@ -19,7 +19,6 @@ namespace PewBibleKjv
     {
         private App _app;
         private RecyclerViewVerseViewAdapter _verseViewAdapter;
-        private SharedPreferencesSimpleStorageAdapter _simpleStorageAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,16 +33,15 @@ namespace PewBibleKjv
 
             // Initialize the app
             _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView, layoutManager);
-            _simpleStorageAdapter = new SharedPreferencesSimpleStorageAdapter(ApplicationContext.GetSharedPreferences("global", FileCreationMode.Private));
 
-            CreateApp(0);
+            CreateApp();
         }
 
-        private void CreateApp(int startingVerse)
+        private void CreateApp()
         {
             if (_app != null)
                 return;
-            _app = new App(_verseViewAdapter, _simpleStorageAdapter, startingVerse);
+            _app = new App(_verseViewAdapter);
         }
     }
 }

@@ -117,9 +117,7 @@
     <Compile Include="VerseView\SwipeTouchListener.cs" />
     <Compile Include="VerseView\VerseAdapter.cs" />
     <Compile Include="VerseView\VerseViewHolder.cs" />
-    <Compile Include="ViewHistoryControlsAdapter.cs" />
     <Compile Include="RecyclerViewVerseViewAdapter.cs" />
-    <Compile Include="SharedPreferencesSimpleStorageAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

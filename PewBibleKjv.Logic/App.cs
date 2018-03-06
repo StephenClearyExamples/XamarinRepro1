@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using PewBibleKjv.Logic.Adapters.Services;
 using PewBibleKjv.Logic.Adapters.UI;
 using PewBibleKjv.Text;
 
@@ -10,54 +9,22 @@ namespace PewBibleKjv.Logic
     public sealed class App : IDisposable
     {
         private readonly IVerseView _verseView;
-        private readonly History _history;
 
-        public App(IVerseView verseView, ISimpleStorage simpleStorage, int initialJump)
+        public App(IVerseView verseView)
         {
             _verseView = verseView;
-
-            // Load history.
-            _history = new History(simpleStorage);
 
             // Keep track of changes to the verse view.
             verseView.OnScroll += UpdateCurrentLocation;
             verseView.OnSwipeLeft += MoveNextChapter;
             verseView.OnSwipeRight += MovePreviousChapter;
-
-            // Wire up history to the history controls.
-            _history.CanMoveChanged += EnableDisableHistoryButtons;
-
-            // If the app has to jump to a verse, then insert it into the history.
-            if (initialJump != Bible.InvalidAbsoluteVerseNumber)
-                _history.AddJump(_history.CurrentAbsoluteVerseNumber, initialJump);
-
-            // Pick up where we left off.
-            verseView.Jump(_history.CurrentAbsoluteVerseNumber);
-
-            EnableDisableHistoryButtons();
         }
 
         public void Dispose()
         {
-            _history.Save(_verseView.CurrentAbsoluteVerseNumber);
             _verseView.OnScroll -= UpdateCurrentLocation;
             _verseView.OnSwipeLeft -= MoveNextChapter;
             _verseView.OnSwipeRight -= MovePreviousChapter;
-            _history.CanMoveChanged -= EnableDisableHistoryButtons;
-        }
-
-        private void EnableDisableHistoryButtons()
-        {
-        }
-
-        private void MoveForward()
-        {
-            _verseView.Jump(_history.MoveForward(_verseView.CurrentAbsoluteVerseNumber));
-        }
-
-        private void MoveBack()
-        {
-            _verseView.Jump(_history.MoveBack(_verseView.CurrentAbsoluteVerseNumber));
         }
 
         private void MovePreviousChapter()
