@@ -11,12 +11,10 @@ namespace PewBibleKjv.VerseView
 {
     public class VerseAdapter : RecyclerView.Adapter
     {
-        private readonly TextService _data;
         private readonly LayoutInflater _layoutInflater;
 
-        public VerseAdapter(TextService data, LayoutInflater layoutInflater)
+        public VerseAdapter(LayoutInflater layoutInflater)
         {
-            _data = data;
             _layoutInflater = layoutInflater;
         }
 
@@ -33,6 +31,6 @@ namespace PewBibleKjv.VerseView
             return new VerseViewHolder(verseView);
         }
 
-        public override int ItemCount => _data.Count;
+        public override int ItemCount => int.MaxValue / 2;
     }
 }

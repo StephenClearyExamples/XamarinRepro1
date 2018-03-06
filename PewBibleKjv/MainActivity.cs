@@ -29,7 +29,7 @@ namespace PewBibleKjv
             var recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
             var layoutManager = new LinearLayoutManager(this);
             recyclerView.SetLayoutManager(layoutManager);
-            recyclerView.SetAdapter(new VerseAdapter(new TextService(), LayoutInflater));
+            recyclerView.SetAdapter(new VerseAdapter(LayoutInflater));
 
             // Initialize the app
             _verseViewAdapter = new RecyclerViewVerseViewAdapter(this, recyclerView, layoutManager);
